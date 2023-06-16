@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Flex, Grid } from "@chakra-ui/react";
+import { Box, Container, Flex, Grid } from "@chakra-ui/react";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
@@ -12,65 +12,50 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 
 export default function TopBar() {
   return (
-    <Flex
+    <Box
+      bg="black"
       w="100%"
+      p={2}
+      color="white"
       justifyContent="space-between"
-      alignItems="center"
-      borderColor="gray.100"
-      bgColor="black"
-      textColor="white"
+      fontSize="xs"
     >
-      <Flex as="ul" listStyleType="none" gap="2rem">
-        <Box style={{ display: "flex" }}>
-          <LocalPhoneIcon style={{ width: "20px" }} />
-          <p style={{ fontSize: "13px" }}>+38 (050) 12 34 56 78</p>
-        </Box>
-        <Box style={{ display: "flex" }}>
-          <LocationOnIcon style={{ width: "20px" }} />
-          <p style={{ fontSize: "13px" }}>Ukraina</p>
-        </Box>
-        <Box style={{ display: "flex" }}>
-          <AccessTimeFilledIcon style={{ width: "20px" }} />
-          <p style={{ fontSize: "13px" }}>All week 24/7</p>
-        </Box>
-      </Flex>
-
-      <div className="social">
-        <Flex as="ul" listStyleType="none" gap="1rem">
-          <Grid
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <FacebookIcon style={{ fontSize: "20px" }} />
-          </Grid>
-          <Grid
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <TwitterIcon style={{ fontSize: "20px" }} />
-          </Grid>
-          <Grid
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <InstagramIcon style={{ fontSize: "20px" }} />
-          </Grid>
-          <Grid
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <PinterestIcon style={{ fontSize: "20px" }} />
-          </Grid>
+      <Container
+        as={Flex}
+        justifyContent="space-between"
+        alignItems="center"
+        size="lg"
+      >
+        <Flex gap="1.5rem">
+          <Flex as={Link} href="#" alignItems="center" gap="0.5rem">
+            <LocalPhoneIcon width="24px" />
+            <p>+38 (050) 12 34 567</p>
+          </Flex>
+          <Flex as={Link} href="#" alignItems="center" gap="0.5rem">
+            <LocationOnIcon width="24px" />
+            <p>Ukraine, Kyiv, Kojwhrelh</p>
+          </Flex>
+          <Flex as={Link} href="#" alignItems="center" gap="0.5rem">
+            <AccessTimeFilledIcon width="24px" />
+            <p>All week 24/7</p>
+          </Flex>
         </Flex>
-      </div>
-    </Flex>
+
+        <Flex gap="1rem">
+          <Link href="#">
+            <FacebookIcon width="24px" />
+          </Link>
+          <Link href="#">
+            <TwitterIcon width="24px" />
+          </Link>
+          <Link href="#">
+            <InstagramIcon width="24px" />
+          </Link>
+          <Link href="#">
+            <PinterestIcon width="24px" />
+          </Link>
+        </Flex>
+      </Container>
+    </Box>
   );
 }

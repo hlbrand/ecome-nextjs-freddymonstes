@@ -8,7 +8,7 @@ export function HomeHeroCategories(categories: Categories[]) {
   return (
     <Grid
       templateColumns="540px 255px 255px"
-      gap="1rem"
+      gap="30px"
       templateRows="200px 260px"
     >
       {categories.map((cat, key) => {
