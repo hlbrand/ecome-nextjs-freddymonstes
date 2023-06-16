@@ -1,15 +1,13 @@
 import Head from "next/head";
-import { Box, Container, Flex } from "@chakra-ui/react";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import SupportIcon from "@mui/icons-material/Support";
-import AutorenewIcon from "@mui/icons-material/Autorenew";
+import { AspectRatio, Box, Container, Flex, Text } from "@chakra-ui/react";
 
 import Header from "@/components/Header";
 import TopBar from "@/components/TopBar";
 
 import { HomeHeroCategories } from "@/components/HomeHeroCategories";
 import { Categories } from "@/models/Categories";
-import { AdvantageItem } from "@/components/AdvantageItem";
+import AdvantageSection from "@/components/AdvantageSection";
+import Image from "next/image";
 
 type Product = {
   id: number;
@@ -48,34 +46,37 @@ export default function Home({ products, categories }: Props) {
           {HomeHeroCategories(categories)}
           {/* <HomeHeroCategories categories={categories}></HomeHeroCategories> */}
 
-          <Flex gap="1rem" justifyContent="space-between" margin="2rem 0">
-            <AdvantageItem
-              title="FREE SHIPPING"
-              content="On all UA order or order above $100"
-              icon={LocalShippingIcon}
-            ></AdvantageItem>
-            <AdvantageItem
-              title="30 DAYS RETURN"
-              content="Simply return it within 30 days for an exchange"
-              icon={AutorenewIcon}
-            ></AdvantageItem>
-            <AdvantageItem
-              title="SUPPORT 24/7"
-              content="Contact us 24 hours a day, 7 days a week"
-              icon={SupportIcon}
-            ></AdvantageItem>
-          </Flex>
+          <AdvantageSection />
         </Container>
 
-        {/* <ol>
+        <Box
+          margin="2rem 0"
+          width="255px"
+          border="solid 1px"
+          borderColor="gray.200"
+        >
+          <AspectRatio position="relative" ratio="1" maxWidth="100%">
+            <Image
+              src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+              alt=""
+              fill="true"
+              style={{ objectFit: "contain" }}
+            />
+          </AspectRatio>
+          <Text>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</Text>
+          <Text>$ 38.00</Text>
+        </Box>
+
+        <ol>
           {products.map((product) => {
             return (
               <li key={product.id}>
+                {/* <Image src={product.image} alt="" width={200} height={200} /> */}
                 <strong>{product.title}</strong>
               </li>
             );
           })}
-        </ol> */}
+        </ol>
       </main>
     </>
   );
