@@ -1,0 +1,303 @@
+Phân tích SWOT	cho getServerSideProps trong Nextjs 13
+Mô hình 5 lực cạnh tranh của Porter	cho getServerSideProps trong Nextjs 13
+Mô hình 7P của McCarthy	cho getServerSideProps trong Nextjs 13
+Phân tích PESTEL	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị của Porter	cho getServerSideProps trong Nextjs 13
+Mô hình thang cân đối của Kaplan và Norton	cho getServerSideProps trong Nextjs 13
+Mô hình phòng thủ-đột phá của Ansoff	cho getServerSideProps trong Nextjs 13
+Mô hình vòng đời sản phẩm	cho getServerSideProps trong Nextjs 13
+Mô hình BCG (Boston Consulting Group)	cho getServerSideProps trong Nextjs 13
+Mô hình cánh buồm của McKinsey	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi cung ứng của Porter	cho getServerSideProps trong Nextjs 13
+Mô hình 4P của McCarthy	cho getServerSideProps trong Nextjs 13
+Mô hình phân tích ngành Porter	cho getServerSideProps trong Nextjs 13
+Mô hình nguồn lực cốt lõi (core competencies)	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị mở rộng của Porter	cho getServerSideProps trong Nextjs 13
+Mô hình thị trường-tổ chức của Williamson	cho getServerSideProps trong Nextjs 13
+Mô hình ba tầng của Hamel và Prahalad	cho getServerSideProps trong Nextjs 13
+Mô hình nguồn lực và năng lực	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại sản phẩm của Kotler	cho getServerSideProps trong Nextjs 13
+Mô hình khung phân tích xung quanh sự cạnh tranh (Framework Analysis of Competition)	cho getServerSideProps trong Nextjs 13
+Mô hình định vị thương hiệu của Kotler	cho getServerSideProps trong Nextjs 13
+Mô hình nguyên tắc cơ bản của Taylor	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị định hình (Value Chain Shaping)	cho getServerSideProps trong Nextjs 13
+Mô hình 5 tầng mây chiến lược của Hagel	cho getServerSideProps trong Nextjs 13
+Mô hình định hướng chiến lược (Strategic Intent)	cho getServerSideProps trong Nextjs 13
+Mô hình chu kỳ sản phẩm của Kondratiev	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị ngược (Reverse Value Chain)	cho getServerSideProps trong Nextjs 13
+Mô hình phát triển sự nghiệp của Greiner	cho getServerSideProps trong Nextjs 13
+Mô hình khung phân tích tình hình nội và ngoại vi (Internal and External Situation Analysis Framework)	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị cung ứng (Supply Chain Value Chain)	cho getServerSideProps trong Nextjs 13
+Mô hình nguồn lực và năng lực nâng cao (Enhanced Resources and Capabilities Model)	cho getServerSideProps trong Nextjs 13
+Mô hình phân tích PEST (Political, Economic, Social, and Technological Analysis)	cho getServerSideProps trong Nextjs 13
+Mô hình 6P của Lauterborn	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị nâng cao (Value Chain Enhancement)	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại thị trường của Kotler	cho getServerSideProps trong Nextjs 13
+Mô hình phân tích ngành Michael Porter 5 Forces Analysis	cho getServerSideProps trong Nextjs 13
+Mô hình chiến lược khác biệt của Porter	cho getServerSideProps trong Nextjs 13
+Mô hình thay đổi tổ chức McKinsey 7S	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại khách hàng của Kotler	cho getServerSideProps trong Nextjs 13
+Mô hình nền tảng khởi nghiệp (Startup Canvas Model)	cho getServerSideProps trong Nextjs 13
+Mô hình phân tích điểm yếu, điểm mạnh, cơ hội và đe dọa (SWOT Analysis)	cho getServerSideProps trong Nextjs 13
+Mô hình chuỗi giá trị tương tác (Interactions Value Chain)	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại thị trường tiềm năng của Ansoff	cho getServerSideProps trong Nextjs 13
+Mô hình phân tích cạnh tranh của McKinsey	cho getServerSideProps trong Nextjs 13
+Mô hình tìm kiếm 5 lực định hình ngành (Industry Shaping Forces)	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại khách hàng theo chu kỳ sử dụng (Customer Segmentation by Usage Cycle)	cho getServerSideProps trong Nextjs 13
+Mô hình định vị thị trường của Treacy và Wiersema	cho getServerSideProps trong Nextjs 13
+Mô hình phân loại nguồn lực và khả năng của Barney	cho getServerSideProps trong Nextjs 13
+Mô hình chu kỳ tăng trưởng của Greiner	cho getServerSideProps trong Nextjs 13
+Mô hình quá trình hình thành chiến lược của Mintzberg	cho getServerSideProps trong Nextjs 13
+	
+*********************
+1. Phân tích SWOT	cho getServerSideProps trong Nextjs 13
+---------------------
+
+Strengths (Điểm mạnh):
+getServerSideProps cho phép lấy dữ liệu từ các nguồn bên ngoài như API hoặc cơ sở dữ liệu trước khi tạo trang, giúp cải thiện hiệu suất (performance) của ứng dụng.
+getServerSideProps cho phép thực hiện các tác vụ phức tạp như xác thực người dùng, kiểm tra quyền truy cập, hay thực hiện các tính toán phức tạp trước khi tạo trang.
+getServerSideProps cho phép tối ưu hóa cho SEO bằng cách cung cấp các thông tin về trang cho các công cụ tìm kiếm.
+
+Weaknesses (Điểm yếu):
+Với getServerSideProps, mỗi lần tải trang đều phải thực hiện lại tác vụ lấy dữ liệu trên server, điều này có thể làm giảm hiệu suất của ứng dụng.
+Với getServerSideProps, các tác vụ lấy dữ liệu trên server có thể làm cho mã nguồn của ứng dụng trở nên phức tạp hơn, khó bảo trì và phát triển.
+
+Opportunities (Cơ hội):
+Với getServerSideProps, ta có thể tối ưu hóa hiệu suất của ứng dụng bằng cách sử dụng bộ nhớ cache để lưu trữ các kết quả của các tác vụ lấy dữ liệu trên server, giảm thiểu số lần phải thực hiện lại tác vụ lấy dữ liệu trên server.
+Với getServerSideProps, ta có thể tận dụng các cơ hội để tối ưu hóa các tác vụ lấy dữ liệu trên server như sử dụng các công nghệ mới để tăng tốc độ truy vấn cơ sở dữ liệu, hay sử dụng các kỹ thuật tối ưu hóa truy vấn API.
+
+Threats (Thách thức):
+Với getServerSideProps, các tác vụ lấy dữ liệu trên server có thể làm giảm hiệu suất của ứng dụng nếu không được tối ưu hóa đúng cách.
+Với getServerSideProps, việc thực hiện các tác vụ lấy dữ liệu trên server có thể làm cho mã nguồn của ứng dụng trở nên phức tạp hơn, khó bảo trì và phát triển nếu không được thiết kế đúng cách.
+
+
+*********************
+2. Mô hình 5 lực cạnh tranh của Porter	cho getServerSideProps trong Nextjs 13
+---------------------
+Threat of new entrants (Mức độ đe dọa từ những đối thủ mới):
+Với getServerSideProps trong Next.js 13, mức độ đe dọa từ những đối thủ mới là khá thấp, bởi vì getServerSideProps là một tính năng độc quyền của Next.js, và chỉ có thể được sử dụng trong các ứng dụng Next.js.
+Tuy nhiên, sự phát triển của các công nghệ mới, hoặc sự xuất hiện của các framework mới có tính năng tương tự có thể làm gia tăng mức độ đe dọa từ những đối thủ mới.
+Bargaining power of suppliers (Sức mạnh đàm phán của nhà cung cấp):
+Với getServerSideProps trong Next.js 13, sức mạnh đàm phán của nhà cung cấp là khá thấp, bởi vì getServerSideProps không phụ thuộc vào bất kỳ nhà cung cấp nào.
+Tuy nhiên, nếu có sự phụ thuộc vào các dịch vụ bên ngoài như API hay cơ sở dữ liệu, sức mạnh đàm phán của nhà cung cấp có thể tăng lên.
+Bargaining power of customers (Sức mạnh đàm phán của khách hàng):
+Với getServerSideProps trong Next.js 13, sức mạnh đàm phán của khách hàng là khá thấp, bởi vì getServerSideProps là một tính năng độc quyền của Next.js và không phụ thuộc vào ý kiến của khách hàng.
+Tuy nhiên, nếu có sự kém hiệu quả trong việc sử dụng getServerSideProps, sức mạnh đàm phán của khách hàng có thể tăng lên.
+Threat of substitutes (Mức độ đe dọa từ các sản phẩm thay thế):
+Với getServerSideProps trong Next.js 13, mức độ đe dọa từ các sản phẩm thay thế là khá thấp, bởi vì getServerSideProps là một tính năng độc quyền của Next.js và không có sản phẩm thay thế tương tự.
+Tuy nhiên, sự phát triển của các công nghệ, hoặc sự xuất hiện của các framework mới có tính năng tương tự có thể làm gia tăng mức độ đe dọa từ các sản phẩm thay thế.
+Competitive rivalry (Sự cạnh tranh):
+Với getServerSideProps trong Next.js 13, mức độ cạnh tranh là khá thấp, bởi vì getServerSideProps là một tính năng độc quyền của Next.js.
+Tuy nhiên, sự phát triển của các công nghệ, hoặc sự xuất hiện của các framework mới có tính năng tương tự có thể làm gia tăng mức độ cạnh tranh.
+
+
+*********************
+3. Mô hình 7P của McCarthy	cho getServerSideProps trong Nextjs 13
+---------------------
+Product (Sản phẩm):
+getServerSideProps là một tính năng quan trọng trong Next.js 13, giúp cải thiện hiệu suất (performance) và tối ưu hóa cho SEO của ứng dụng.
+Tuy nhiên, getServerSideProps không phải là một sản phẩm hoàn chỉnh mà chỉ là một tính năng của Next.js 13.
+Price (Giá):
+Giá của getServerSideProps là miễn phí và tính năng này được cung cấp bởi Next.js 13 một cách miễn phí cho người sử dụng.
+Place (Địa điểm):
+getServerSideProps là tính năng được tích hợp sẵn trong Next.js 13, nó có thể được sử dụng trên bất kỳ máy chủ nào cài đặt Next.js 13.
+Promotion (Xúc tiến):
+Các tính năng của getServerSideProps được giới thiệu và quảng bá thông qua tài liệu của Next.js 13, các blog và các diễn đàn liên quan đến React và Next.js.
+People (Người):
+getServerSideProps là một tính năng kỹ thuật của Next.js 13 và không liên quan đến con người, tuy nhiên các nhà phát triển của Next.js 13 có thể sử dụng tính năng này để cải thiện trải nghiệm người dùng.
+Process (Quy trình):
+getServerSideProps là một tính năng kỹ thuật trong Next.js 13 và nó được tích hợp sẵn trong quy trình phát triển ứng dụng của Next.js.
+Physical evidence (Bằng chứng vật lý):
+getServerSideProps là một tính năng kỹ thuật và không có bằng chứng vật lý nào đi kèm với nó.
+Tóm lại, getServerSideProps là một tính năng quan trọng trong Next.js 13, giúp cải thiện hiệu suất và tối ưu hóa cho SEO của ứng dụng. Nó được tích hợp sẵn trong quy trình phát triển ứng dụng của Next.js và được cung cấp miễn phí cho người sử dụng.
+
+
+*********************
+4. Phân tích PESTEL	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+5. Mô hình chuỗi giá trị của Porter	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+6. Mô hình thang cân đối của Kaplan và Norton	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+7. Mô hình phòng thủ-đột phá của Ansoff	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+8. Mô hình vòng đời sản phẩm	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+9. Mô hình BCG (Boston Consulting Group)	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+*********************
+10. Mô hình cánh buồm của McKinsey	cho getServerSideProps trong Nextjs 13
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
+
+
+
+*********************
+
+---------------------
