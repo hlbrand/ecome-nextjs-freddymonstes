@@ -1,11 +1,15 @@
 import Head from "next/head";
+import { Box, Container, Flex } from "@chakra-ui/react";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import SupportIcon from "@mui/icons-material/Support";
+import AutorenewIcon from "@mui/icons-material/Autorenew";
 
 import Header from "@/components/Header";
 import TopBar from "@/components/TopBar";
 
 import { HomeHeroCategories } from "@/components/HomeHeroCategories";
 import { Categories } from "@/models/Categories";
-import { Box, Container } from "@chakra-ui/react";
+import { AdvantageItem } from "@/components/AdvantageItem";
 
 type Product = {
   id: number;
@@ -34,13 +38,34 @@ export default function Home({ products, categories }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <TopBar />
-        <Box marginBottom="2rem">
-          <Header />
-        </Box>
+      <TopBar />
+      <Box marginBottom="2rem">
+        <Header />
+      </Box>
 
-        <Container size="lg">{HomeHeroCategories(categories)}</Container>
+      <main>
+        <Container size="lg">
+          {HomeHeroCategories(categories)}
+          {/* <HomeHeroCategories categories={categories}></HomeHeroCategories> */}
+
+          <Flex gap="1rem" justifyContent="space-between" margin="2rem 0">
+            <AdvantageItem
+              title="FREE SHIPPING"
+              content="On all UA order or order above $100"
+              icon={LocalShippingIcon}
+            ></AdvantageItem>
+            <AdvantageItem
+              title="30 DAYS RETURN"
+              content="Simply return it within 30 days for an exchange"
+              icon={AutorenewIcon}
+            ></AdvantageItem>
+            <AdvantageItem
+              title="SUPPORT 24/7"
+              content="Contact us 24 hours a day, 7 days a week"
+              icon={SupportIcon}
+            ></AdvantageItem>
+          </Flex>
+        </Container>
 
         {/* <ol>
           {products.map((product) => {
